@@ -1,0 +1,64 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with subtle grid -->
+    <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f0" stroke-width="1"/>
+        </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+
+    <!-- Title -->
+    <rect x="200" y="20" width="400" height="60" rx="10" fill="#4A90E2" stroke="#2171C7" stroke-width="2"/>
+    <text x="400" y="55" text-anchor="middle" fill="white" font-family="Arial" font-weight="bold" font-size="20">TypeLang Pattern System</text>
+
+    <!-- Module Boxes -->
+    <!-- Course Processing -->
+    <g transform="translate(50,120)">
+        <rect width="220" height="160" rx="10" fill="#98D8FF" stroke="#2171C7" stroke-width="2"/>
+        <text x="110" y="30" text-anchor="middle" font-family="Arial" font-weight="bold">Course Processing</text>
+        <text x="110" y="50" text-anchor="middle" font-family="Arial" font-size="12">Type: List⟨(num, bool)⟩</text>
+        <!-- Function signatures -->
+        <text x="20" y="80" font-family="monospace" font-size="11">getTitle:</text>
+        <text x="30" y="95" font-family="monospace" font-size="11">List⟨(num,bool)⟩ → List⟨num⟩</text>
+        <text x="20" y="120" font-family="monospace" font-size="11">procStudent:</text>
+        <text x="30" y="135" font-family="monospace" font-size="11">List⟨(num,bool)⟩ →</text>
+        <text x="30" y="150" font-family="monospace" font-size="11">(List⟨(num,bool)⟩ → List⟨num⟩)</text>
+    </g>
+
+    <!-- Strategy Pattern -->
+    <g transform="translate(290,120)">
+        <rect width="220" height="160" rx="10" fill="#FFD479" stroke="#2171C7" stroke-width="2"/>
+        <text x="110" y="30" text-anchor="middle" font-family="Arial" font-weight="bold">Strategy Pattern</text>
+        <text x="110" y="50" text-anchor="middle" font-family="Arial" font-size="12">Type: (num num → bool)</text>
+        <!-- Function signatures -->
+        <text x="20" y="80" font-family="monospace" font-size="11">getStrategy:</text>
+        <text x="30" y="95" font-family="monospace" font-size="11">num → (num num → bool)</text>
+        <text x="20" y="120" font-family="monospace" font-size="11">setStrategy:</text>
+        <text x="30" y="135" font-family="monospace" font-size="11">num → (num num → bool)</text>
+        <text x="30" y="150" font-family="monospace" font-size="11">→ bool</text>
+    </g>
+
+    <!-- Unique Processing -->
+    <g transform="translate(530,120)">
+        <rect width="220" height="160" rx="10" fill="#98FF9F" stroke="#2171C7" stroke-width="2"/>
+        <text x="110" y="30" text-anchor="middle" font-family="Arial" font-weight="bold">Unique Processing</text>
+        <text x="110" y="50" text-anchor="middle" font-family="Arial" font-size="12">Type: List⟨num⟩ → List⟨num⟩</text>
+        <!-- Function signatures -->
+        <text x="20" y="80" font-family="monospace" font-size="11">member:</text>
+        <text x="30" y="95" font-family="monospace" font-size="11">num → List⟨num⟩ → bool</text>
+        <text x="20" y="120" font-family="monospace" font-size="11">unique:</text>
+        <text x="30" y="135" font-family="monospace" font-size="11">List⟨num⟩ → List⟨num⟩</text>
+    </g>
+
+    <!-- Connections -->
+    <g stroke="#666" stroke-width="2" fill="none">
+        <!-- Connection lines -->
+        <path d="M 160,300 C 160,350 400,350 400,300" />
+        <path d="M 400,300 C 400,350 640,350 640,300" />
+    </g>
+
+    <!-- Type System Footer -->
+    <rect x="100" y="400" width="600" height="60" rx="10" fill="#F8F9FA" stroke="#DDD" stroke-width="2"/>
+    <text x="400" y="430" text-anchor="middle" font-family="Arial" font-size="14">Type System Features: Generic Types, Higher-Order Functions, References, Tuples</text>
+    <text x="400" y="450" text-anchor="middle" font-family="Arial" font-size="12">Static Type Checking • Pure Functional • Pattern Matching</text>
+</svg>
